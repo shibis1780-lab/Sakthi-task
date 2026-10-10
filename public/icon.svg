@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="sakthiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#818cf8" />
+      <stop offset="80%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="480" height="480" x="16" y="16" rx="96" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3" />
+
+  <!-- Outer Energy Ring -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="url(#sakthiGrad)" stroke-width="6" opacity="0.4" stroke-dasharray="16 12" />
+  
+  <!-- Glowing Core -->
+  <circle cx="256" cy="256" r="140" fill="url(#sakthiGrad)" opacity="0.12" filter="url(#glow)" />
+  
+  <!-- Soundwaves / AI Voice Pulses -->
+  <path d="M 160 256 Q 160 200 200 200 T 256 256 T 312 312 T 352 256" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 180 256 C 180 220 220 210 256 256 C 292 302 332 292 332 256" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Iconic Trident/Energy/Tamil "ச" (Sakthi) Stylized Symbol -->
+  <g filter="url(#glow)">
+    <!-- Center spear / flame -->
+    <path d="M 256 128 C 262 168 280 210 286 240 C 274 246 266 256 266 270 L 266 352 C 266 357 261 362 256 362 C 251 362 246 357 246 352 L 246 270 C 246 256 238 246 226 240 C 232 210 250 168 256 128 Z" fill="url(#sakthiGrad)" />
+    <!-- Left energy wing -->
+    <path d="M 216 220 C 190 236 176 266 182 296 C 186 314 200 326 218 322 C 230 320 238 310 238 298 C 238 274 226 246 216 220 Z" fill="url(#sakthiGrad)" opacity="0.9" />
+    <!-- Right energy wing -->
+    <path d="M 296 220 C 322 236 336 266 330 296 C 326 314 312 326 294 322 C 282 320 274 310 274 298 C 274 274 286 246 296 220 Z" fill="url(#sakthiGrad)" opacity="0.9" />
+  </g>
+
+  <!-- Sakthi Tamil Text Accent at Bottom -->
+  <text x="256" y="420" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="34" fill="#f8fafc" letter-spacing="4">சக்தி AI</text>
+  <text x="256" y="446" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#94a3b8" letter-spacing="2">PERSONAL ASSISTANT</text>
+</svg>

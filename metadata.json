@@ -1,0 +1,6 @@
+{
+  "name": "சக்தி AI - Personal Assistant",
+  "description": "Smart Thanglish personal assistant with Tamil male voice replies, task prioritization, recurring and location-based reminders, calendar syncing, and offline PWA support.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
